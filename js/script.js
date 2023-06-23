@@ -177,4 +177,25 @@ $(function () {
   $window.on('mouseup', function () {
     $cursor.removeClass('click');
   });
+
+  // top button
+  $('.TopBtn').hide();
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.TopBtn').fadeIn();
+    } else {
+      $('.TopBtn').fadeOut();
+    }
+  });
+
+  $('.TopBtn a').click(function () {
+    $('body,html').animate(
+      {
+        scrollTop: 0,
+      },
+      800
+    );
+    return false;
+  });
 });
