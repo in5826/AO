@@ -660,6 +660,7 @@ h3 {
 .about_ctn_sub .in_skill dl:nth-of-type(2) {
   margin-left: 50px;
 }
+
 .about_ctn_sub .in_skill dl {
   margin-top: 80px;
 }
@@ -671,9 +672,11 @@ h3 {
   text-transform: capitalize;
   margin-top: 50px;
 }
+
 .about_ctn_sub .in_skill dt:nth-child(1) {
   margin-top: 0;
 }
+
 .about_ctn_sub .in_skill dt:nth-child(4) {
   float: left;
 }
