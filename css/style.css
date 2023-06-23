@@ -964,6 +964,7 @@ h3 {
 .sec_col5 {
   margin: 100px 0;
 }
+
 .sec_col5 .link_sns_col,
 .sec_col5 .link_sns_col > ul {
   display: flex;
@@ -1007,8 +1008,15 @@ h3 {
   height: 90px;
   background: url(../img/site.svg) no-repeat 0 0 / cover;
 }
-.sec_col5 .link_sns_col > ul li:nth-child(2):before {
+/* .sec_col5 .link_sns_col > ul li:nth-child(2):before {
   background: url(../img/ins.svg) no-repeat 0 0 / cover;
+} */
+.sec_col5 .link_sns_col > ul li:nth-child(2):before {
+  background: url(../img/homesiteM.svg) no-repeat 0 0 / cover;
+}
+
+.sec_col5 a:hover {
+  color: var(--sub-color-SoftRed);
 }
 /* link_sns :e */
 
