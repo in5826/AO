@@ -12,7 +12,6 @@ $(function () {
   $btnMenu.on('click', function (e) {
     e.preventDefault();
     $menu01.show();
-    $dim.show();
 
     if (isAct === false) {
       openMenu();
@@ -28,7 +27,6 @@ $(function () {
     slideMenu(0);
     isAct = true;
     $menu01.fadeIn();
-    $dim.fadeIn();
   }
 
   function closeMenu() {
@@ -36,7 +34,6 @@ $(function () {
     slideMenu('-100%');
     isAct = false;
     $menu01.fadeOut();
-    $dim.fadeOut();
   }
 
   function slideMenu(pos) {
