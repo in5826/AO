@@ -50,7 +50,6 @@ $(function () {
   gsap.from('.pic_1', {
     duration: 5,
     x: -200,
-    yPercent: 20,
   });
   gsap.from('.pic_2', {
     duration: 5,
@@ -72,22 +71,22 @@ $(function () {
   });
   gsap.from('.pic_6', {
     scale: 0.1,
-    duration: 2,
+    duration: 5,
 
     x: -200,
     stagger: {
-      amount: 1.5,
+      amount: 5,
       grid: 'auto',
       from: 'center',
     },
   });
   gsap.from('.pic_7', {
-    duration: 2,
+    duration: 5,
     x: -200,
     rotation: 360,
   });
   gsap.from('.pic_8', {
-    duration: 2,
+    duration: 5,
     x: -200,
     scale: 0.1,
   });
