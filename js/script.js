@@ -8,18 +8,6 @@ $(function () {
   $menu01.hide();
   $dim.hide();
 
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-
   // 햄버거 버튼을 클릭했을 때
   $btnMenu.on('click', function (e) {
     e.preventDefault();
