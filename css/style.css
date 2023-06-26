@@ -21,7 +21,7 @@
   pointer-events: none;
   /* 사용자에게 선택되지도 마라 */
   user-select: none;
-  z-index: 9991;
+  z-index: 9993;
 }
 .cursor.click {
   background-position: -33px 0;
