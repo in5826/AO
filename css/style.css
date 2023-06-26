@@ -307,7 +307,7 @@ h2 {
 }
 h2 .char {
   animation: roll-in-blurred-bottom 1.5s;
-  animation-delay: 1.6s;
+  animation-delay: 1.8s;
   animation-iteration-count: 2;
 }
 
