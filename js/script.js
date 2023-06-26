@@ -48,19 +48,19 @@ $(function () {
 
   // visual main 애니메이션
   gsap.from('.pic_1', {
-    duration: 2,
+    duration: 5,
     x: -200,
   });
   gsap.from('.pic_2', {
-    duration: 2,
+    duration: 5,
     y: -200,
   });
   gsap.from('.pic_3', {
-    duration: 2,
+    duration: 5,
     x: 800,
   });
   gsap.from('.pic_4', {
-    duration: 2,
+    duration: 5,
     x: 200,
     scale: 2,
   });
