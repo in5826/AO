@@ -341,7 +341,7 @@ h2 .char {
 
 .visual_imgs li {
   position: absolute;
-   animation-delay: 2s;
+   animation-delay: 5s;
 }
 .visual_imgs li:nth-child(1) {
   width: 236px;
