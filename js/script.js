@@ -74,11 +74,7 @@ $(function () {
     duration: 5,
 
     x: -200,
-    stagger: {
-      amount: 5,
-      grid: 'auto',
-      from: 'center',
-    },
+   
   });
   gsap.from('.pic_7', {
     duration: 5,
@@ -89,6 +85,12 @@ $(function () {
     duration: 5,
     x: -200,
     scale: 0.1,
+
+     stagger: {
+      amount: 5,
+      grid: 'auto',
+      from: 'center',
+    },
   });
 
   var swiper = new Swiper('.mySwiper', {
