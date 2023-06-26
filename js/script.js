@@ -50,6 +50,7 @@ $(function () {
   gsap.from('.pic_1', {
     duration: 5,
     x: -200,
+    yPercent: 20,
   });
   gsap.from('.pic_2', {
     duration: 5,
