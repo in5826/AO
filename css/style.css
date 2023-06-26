@@ -1115,6 +1115,11 @@ h3 {
 }
 .sec_col5 .link_sns_col > ul li:nth-child(3):before {
   content: '2019년 포폴';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  background: var(--sub-color-SoftRed);
 }
 
 .sec_col5 a:hover {
