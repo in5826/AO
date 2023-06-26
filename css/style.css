@@ -306,8 +306,8 @@ h2 {
   color: #e56b6f;
 }
 h2 .char {
-  animation: roll-in-blurred-bottom 2s;
-  animation-delay: 1.8s;
+  animation: roll-in-blurred-bottom 1.8s;
+  animation-delay: 2s;
   animation-iteration-count: 2;
 }
 
