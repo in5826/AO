@@ -154,6 +154,7 @@ $(function () {
   // cursor
   const $window = $(window);
   const $cursor = $('.cursor');
+  const $loading = $('.loading');
 
   let mouseX = 0;
   let mouseY = 0;
@@ -175,6 +176,13 @@ $(function () {
   });
   $window.on('mouseup', function () {
     $cursor.removeClass('click');
+  });
+
+  // loading
+  $window.on('load', function () {
+    setTimeout(function () {
+      $loading.fadeOut();
+    }, 2800);
   });
 
   // top button
