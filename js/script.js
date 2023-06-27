@@ -74,7 +74,6 @@ $(function () {
     duration: 5,
 
     x: -200,
-   
   });
   gsap.from('.pic_7', {
     duration: 5,
@@ -86,7 +85,7 @@ $(function () {
     x: -200,
     scale: 0.1,
 
-     stagger: {
+    stagger: {
       amount: 5,
       grid: 'auto',
       from: 'center',
