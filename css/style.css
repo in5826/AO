@@ -150,7 +150,7 @@ nav > ul {
   display: flex;
 }
 
-.menu_icon {
+.menu_icon a {
   width: 48px;
   height: 48px;
   position: fixed;
@@ -176,8 +176,8 @@ nav > ul {
   width: 68px;
   height: 68px;
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 60px;
+  left: 4.4%;
 }
 
 .menu_list_2set {
@@ -185,6 +185,13 @@ nav > ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+.menu_list_2set::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
 
 .menu_list ul {
@@ -341,7 +348,7 @@ h2 .char {
 
 .visual_imgs li {
   position: absolute;
-   animation-delay: 5s;
+  animation-delay: 5s;
 }
 .visual_imgs li:nth-child(1) {
   width: 236px;
@@ -1118,8 +1125,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align:center;
-  color:var(--mainViaual-color);
+  text-align: center;
+  color: var(--mainViaual-color);
   border-radius: 90px;
   background: var(--sub-color-SoftRed);
 }
