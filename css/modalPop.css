@@ -28,7 +28,7 @@
 .lightbox-target > .container {
   margin: auto;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50vw;
   width: 80%;
   -webkit-transition: 0.5s ease-in-out;
