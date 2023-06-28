@@ -183,7 +183,7 @@ $(function () {
   $window.on('load', function () {
     setTimeout(function () {
       $loading.fadeOut();
-    },1000);
+    },1400);
   });
 
   // top button
