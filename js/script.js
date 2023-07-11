@@ -11,7 +11,7 @@ $(function () {
   // 햄버거 버튼을 클릭했을 때
   $btnMenu.on('click', function (e) {
     e.preventDefault();
-    $menu01.show();
+    $menu01.fadeIn();
 
     if (isAct === false) {
       openMenu();
@@ -92,6 +92,7 @@ $(function () {
     },
   });
 
+  // PROJECT:slide
   var swiper = new Swiper('.mySwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -99,7 +100,7 @@ $(function () {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
+      delay: 3800,
       disableOnInteraction: false,
     },
     pagination: {
@@ -112,24 +113,27 @@ $(function () {
     },
   });
 
+  // WORK:slide
   var swiper2 = new Swiper('.workImg_list', {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
+    speed: 4800,
     autoplay: {
-      delay: 2500,
+      delay: 0,
+      reverseDirection: true,
       disableOnInteraction: false,
     },
   });
 
+  // WORK:slide
   var swiper3 = new Swiper('.workImg_list2', {
     slidesPerView: 5,
     spaceBetween: 30,
     loop: true,
-
+    speed: 4800,
     autoplay: {
-      delay: 2500,
-      reverseDirection: true,
+      delay: 0,
       disableOnInteraction: false,
     },
   });
@@ -183,7 +187,7 @@ $(function () {
   $window.on('load', function () {
     setTimeout(function () {
       $loading.fadeOut();
-    },1400);
+    });
   });
 
   // top button
