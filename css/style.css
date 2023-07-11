@@ -154,6 +154,7 @@ nav > ul {
   width: 48px;
   height: 48px;
   position: fixed;
+  left: 5.3%;
 }
 
 .menu_list {
@@ -173,11 +174,11 @@ nav > ul {
 
 .menu_icon_off a {
   display: block;
-  width: 68px;
-  height: 68px;
+  width: 48px;
+  height: 48px;
   position: absolute;
   top: 60px;
-  left: 4.4%;
+  left: 5.3%;
 }
 
 .menu_list_2set {
@@ -305,8 +306,8 @@ h2 {
   position: absolute;
   width: 458px;
   height: 576px;
-  left: 330px;
-  top: 259px;
+  left: 290px;
+  top: 260px;
   font-weight: 600;
   font-size: 96px;
   letter-spacing: -0.011em;
@@ -371,20 +372,20 @@ h2 .char {
 .visual_imgs li:nth-child(4) {
   width: 235px;
   height: 214px;
-  left: 864px;
+  left: 800px;
   top: 204px;
 }
 .visual_imgs li:nth-child(5) {
   width: 599px;
   height: 539px;
-  left: 986px;
+  left: 920px;
   top: 315px;
 }
 .visual_imgs li:nth-child(6) {
   width: 295px;
   height: 269px;
-  left: 1521px;
-  top: 587px;
+  left: 1410px;
+  top: 600px;
 }
 .visual_imgs li:nth-child(7) {
   width: 124px;
@@ -457,7 +458,7 @@ h3 {
   padding: 10px 40px;
 }
 
-/* image */
+/* project:image */
 .project_list .proView {
   width: 1400px;
   display: flex;
@@ -471,6 +472,31 @@ h3 {
   width: 600px;
   height: 868px;
   border-radius: 10px;
+  position: relative;
+}
+
+.project_list .proView .proImg1 a::after {
+  content: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: var(--mainViaual-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.project_list .proView .proImg1 a:hover::after {
+  content: 'view';
+  background: rgba(229, 107, 111, 0.8);
+  font-weight: 600;
+  font-size: 30px;
 }
 
 .pringe .proView .proImg1 a {
@@ -490,10 +516,15 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e56b6f;
+  background: var(--sub-color-SoftRed);
   font-weight: 600;
   font-size: 22px;
-  color: #fff;
+  color: var(--mainViaual-color);
+}
+
+.project_list .proBtn:hover {
+  background-color: var(--mainViaual-color);
+  color: var(--sub-color-SoftRed);
 }
 
 .project_list .proBtn_col {
@@ -541,21 +572,20 @@ h3 {
 }
 
 /* gilBokSoon */
-.gilBokSoon .proView .proImg1 {
+.gilBokSoon .proView .proImg1 a {
   background: url(../img/gilBokSoon.jpg) no-repeat 0 0 / cover;
   border-radius: 10px;
 }
 
 /* 홀로 */
-.holo .proView .proImg1 {
+.holo .proView .proImg1 a {
   background: url(../img/holo01.jpg) no-repeat 0 0 / cover;
-  border-radius: 10px;
 }
 
 .holo .project_pic {
   width: 326px;
   height: 476px;
-  background: url(../img/holo_page.jpg) no-repeat 0 0 / cover;
+  background: url(../img/holo_page_view.jpg) no-repeat 0 0 / cover;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -626,9 +656,10 @@ h3 {
   top: 0;
   left: 0;
   background: rgba(229, 107, 111, 0.8);
-  color: #fff;
+  color: var(--mainViaual-color);
   border-radius: 50px;
   animation: slideBox 0.4s;
+  font-weight: 600;
 }
 
 .workImg_list2 {
@@ -797,7 +828,7 @@ h3 {
 }
 
 .about_ctn_sub .in_skill dd::after {
-  content: '90';
+  content: '95';
   clear: both;
   display: flex;
   justify-content: center;
@@ -805,7 +836,7 @@ h3 {
   font-size: 16px;
   font-weight: 700;
   background: #e56b6f;
-  width: 90%;
+  width: 95%;
   height: 20px;
   position: absolute;
   top: 0;
@@ -814,17 +845,13 @@ h3 {
   border-radius: 15px;
 }
 
-.about_ctn_sub .in_skill dd.inD::after {
-  content: '80';
-  width: 80%;
-}
 .about_ctn_sub .in_skill dd.HTCSS::after {
-  content: '80';
-  width: 80%;
+  content: '90';
+  width: 90%;
 }
 .about_ctn_sub .in_skill dd.jvasc::after {
-  content: '70';
-  width: 70%;
+  content: '85';
+  width: 85%;
 }
 
 /* timeline : 내가 걸어온 길 */
