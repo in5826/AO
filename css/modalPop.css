@@ -44,6 +44,10 @@
   height: 60%;
 }
 
+.container_page {
+  height: auto !important;
+}
+
 .lightbox-target .container p {
   display: flex;
   justify-content: center;
