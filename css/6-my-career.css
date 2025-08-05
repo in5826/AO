@@ -1,0 +1,85 @@
+/* 386 */
+#my-career, #footer {
+  background-color: var(--color-main);
+}
+
+.my-career__list {
+  flex-direction: column;
+}
+
+.my-career__item {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: clamp(0px, 2.4vw, 63px);
+  padding: 29px clamp(20px, 5.4vw, 120px);
+  border-bottom: 1px solid rgba(231, 243, 253, 0.5);
+  word-break: normal;
+  overflow-wrap: break-word;
+  word-break: break-word; 
+}
+
+.my-career__date {
+  width: 190px;
+  min-width: 140px;
+  font-size: var(--font-career-date);
+  font-weight: 300;
+}
+
+.my-career__CPitem {
+  display: flex;
+  align-items: center;
+  gap: clamp(0px, 2.4vw, 63px);
+}
+
+.my-career__company {
+  width: clamp(120px, 12.5vw, 200px);
+  font-size: var(--font-career-comp);
+  font-weight: 500;
+}
+
+.my-career__position {
+  width: clamp(120px, 11.3vw, 170px);
+  font-size: var(--font-career-job);
+  font-weight: 500;
+}
+.my-career__description {
+  width: clamp(250px, 23vw, 350px);
+  font-size: var(--font-career-work);
+  font-weight: 400;
+}
+
+
+
+/* 모바일 */
+@media (max-width: 768px), (max-width: 1058px) {
+.my-career__item {
+  padding: 0 15px 20px 0;
+  flex-direction: column;
+  text-align: start;
+  align-items: flex-end;
+  gap: 8px;
+  
+}
+.my-career__date, .my-career__description, .my-career__CPitem {
+  width: 236px;
+}
+.my-career__date {
+  padding-bottom: 20px;
+}
+
+.my-career__CPitem {
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.my-career__company {
+    width: 300px;
+}
+
+.my-career__company,
+.my-career__position {
+  width: auto;
+}
+
+}
