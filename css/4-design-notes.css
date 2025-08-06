@@ -23,6 +23,7 @@
   height: clamp(450px, 41vw, 600px);
   margin-bottom: clamp(60px, 6vw, 100px);
   padding-bottom: 60px;
+  position: relative;
 }
 
 .design-notes__item-right {
@@ -34,9 +35,7 @@
   background-color: transparent;
   color: var(--color-dark-txt);
 }
-.design-notes__txt {
-  position: relative;
-}
+
 .design-notes__Fclick  {
   display: inline-flex;
   background: var(--color-light-bu);
@@ -44,7 +43,7 @@
   position: absolute;
   margin-left: 20px;
   padding: 10px;
-  top: 15%;
+  bottom: -1%;
   right: 0;
 }
 
