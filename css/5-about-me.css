@@ -15,7 +15,7 @@
   padding: clamp(12px, 1.7vw, 32.5px) clamp(18px, 3vw, 60px);
   font-size: clamp(15px, 2.5vw, 50px);
   border-radius: 57.5px;
-  background-color: #fff;
+  background-color: var(--color-light-bg);
   position: absolute;
   top: clamp(60px, 5.9vw, 93px);
   left: clamp(150px, 25.3vw, 490px);
