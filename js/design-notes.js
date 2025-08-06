@@ -8,7 +8,11 @@
     // 여기에 필요한 이미지들 계속 추가!
   ];
 
-  imagesToPreload.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
+  
+imagesToPreload.forEach((src) => {
+  const img = new Image();
+  img.onload = () => {
+    console.log(`✅ Loaded: ${src}`);
+  };
+  img.src = src;
+});
