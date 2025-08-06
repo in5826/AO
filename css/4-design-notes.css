@@ -61,6 +61,9 @@
   background-size: cover;
   transition: background-image 0.3s ease;
 }
+.design-notes__img:hover {
+  transition: background-image 0.3s ease;
+}
 
 /* 정사각형 이미지*/
 .design-notes__item-left .design-notes__item:nth-child(2),
