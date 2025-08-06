@@ -98,9 +98,7 @@ position: relative;
   -webkit-animation: rotate-hor-center 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	animation: rotate-hor-center 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   pointer-events: auto;
-
   filter: brightness(100) invert(1);
-
 }
 
 /* 인트로 내용 */
@@ -132,7 +130,6 @@ position: relative;
   background-image: url(../images/me__APNG.png);
   background-repeat: no-repeat;
   background-size: 86%;
-  /* background-position: center clamp(18px, 2.4vw, 35px); */
   background-position: center -8px;
 }
 
@@ -143,8 +140,6 @@ position: relative;
   width: 100%;
   height: clamp(178px, 37.6vw, 730px);
   margin-top: clamp(60px, 6vw, 130px);
-  /* border-radius: clamp(19px, 5vw, 73px); */
-  /* background-color: var(--color-sub); */
   background-image: url(../images/intro_img.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -152,12 +147,24 @@ position: relative;
 }
 
 .subtitle-wrapper {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap; 
   text-align: center;
-  font-size: var(--font-career-date);
   font-weight: 300;
   padding-block: clamp(100px, 12vw, 210px);
+  white-space: nowrap;
 }
 
+.subtitle {
+  display: inline-block;
+  font-size: clamp(40px, 4.6vw, 80px);
+  -webkit-animation: scroll-left 20s linear infinite; 
+  animation: scroll-left 20s linear infinite; 
+  font-weight: 900;
+  color: var(--color-main);
+
+}
 
 /* 네비게이션 목록 */
 .header__nav {
@@ -295,8 +302,14 @@ position: relative;
 
 
 
-
-
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 
 
