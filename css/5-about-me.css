@@ -1,0 +1,77 @@
+/* 356 */
+#about-me {
+  padding-top: 0;
+  padding-bottom: clamp(44px, 5.3vw, 93px);
+  background-color: var(--color-sub);
+  font-weight: 500;
+}
+
+.speech-bubble {
+  position: relative;
+  height: clamp(93px, 15.4vw, 302px);
+}
+
+.about-me__enjoyText {
+  padding: clamp(12px, 1.7vw, 32.5px) clamp(18px, 3vw, 60px);
+  font-size: clamp(15px, 2.5vw, 50px);
+  border-radius: 57.5px;
+  background-color: var(--color-light-bg);
+  position: absolute;
+  top: clamp(60px, 5.9vw, 93px);
+  left: clamp(150px, 25.3vw, 490px);
+}
+
+/* 말풍선 화살표 */
+.balloon-arrow {
+  width: clamp(30px, 5vw, 98px);
+  position: absolute;
+  top: clamp(90px, 10.5vw, 180px);
+  left: clamp(186px, 30.6vw, 599px);
+}
+
+.about-me__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+  text-align: center;
+  font-size: clamp(19px, 3vw, 60px);
+}
+
+.about-me__item {
+  width: clamp(86px, 13.5vw, 260px);
+}
+
+.about-me__item > img {
+  width: inherit;
+  height: auto;
+}
+
+.about-me__item > div {
+  margin-top: clamp(10px, 0.9vw, 15px);
+}
+
+.about-me__AboutText {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: clamp(44px, 5.1vw, 87px);
+}
+
+.about-me__AboutText > p {
+  padding: clamp(24px, 2.3vw, 35.5px) clamp(49px, 5.8vw, 100px) ;
+  border-radius: 100px;
+  font-size: clamp(49px, 5.8vw, 100px);
+  border: 1px solid #000;
+}
+
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .about-me__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    justify-self: center;
+  }
+}
